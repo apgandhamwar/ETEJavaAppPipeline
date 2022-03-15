@@ -1,7 +1,12 @@
 @Library ('SharedLib') _
 
 pipeline{
-    agent kubeagent
+    agent {
+       node {
+           label 'kubeagent'
+        }
+    }
+        
 
     stages(){
 
