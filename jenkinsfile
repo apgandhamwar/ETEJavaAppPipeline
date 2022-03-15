@@ -1,7 +1,7 @@
 @Library ('SharedLib') _
 
 pipeline{
-    agent any
+    agent kubeagent
 
     stages(){
 
@@ -10,7 +10,7 @@ pipeline{
           steps{
 
             script{
-                
+
                 helloArgs('Jenkins!!')
             }
         }
